@@ -85,7 +85,7 @@ app.get('/:articleName',function(req,res){
     //articleName==article-one
     //articles[articleName]== {} content object for article one
     var articleName = req.params.articleName;
-    red.send(createtemplate(articles[articleName]));
+    req.send(createtemplate(articles[articleName]));
 });
 
 
